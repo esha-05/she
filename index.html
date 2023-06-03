@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conference Registration Form</title>
+  <style>
+    /* Add your CSS styling here */
+    /* Example styles */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #6b3232;
+      background-color: #6b8bd1;
+      font-family: Arial, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #730404;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #2f00d8;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #863395;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Conference Registration</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="affiliation">Affiliation:</label>
+    <input type="text" id="affiliation" name="affiliation" required>
+
+    <label for="dietary">Dietary Preferences:</label>
+    <input type="checkbox" id="vegetarian" name="dietary" value="vegetarian">
+    <label for="vegetarian">Vegetarian</label>
+    <input type="checkbox" id="vegan" name="dietary" value="vegan">
+    <label for="vegan">Vegan</label>
+    <input type="checkbox" id="gluten-free" name="dietary" value="gluten-free">
+    <label for="gluten-free">Gluten-free</label>
+
+    <label for="workshop">Preferred Workshop:</label>
+    <select id="workshop" name="workshop">
+      <option value="workshop1">Workshop 1</option>
+      <option value="workshop2">Workshop 2</option>
+      <option value="workshop3">Workshop 3</option>
+    </select>
+
+    <label>Registration Type:</label>
+    <input type="radio" id="general" name="registration" value="general">
+    <label for="general">General Attendee</label>
+    <input type="radio" id="student" name="registration" value="student">
+    <label for="student">Student</label>
+    <input type="radio" id="vip" name="registration" value="vip">
+    <label for="vip">VIP</label>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
